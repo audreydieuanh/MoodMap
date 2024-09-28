@@ -63,7 +63,8 @@ renderResources();
 
 const renderResource = async () => {
     const requestID = parseInt(window.location.href.split('/').pop());
-    const response = await fetch(`/resources`);
+    console.log('requestID:', requestID);
+    const response = await fetch('/resources');
     const data = await response.json();
 
     const resourceContent = document.getElementById('resource-content');
@@ -88,8 +89,8 @@ const requestedUrl = window.location.href.split('/').pop()
 
 if (requestedUrl) {
     window.location.href = '../404.html'
-  }
-  else {
+}
+else {
     renderResource();
-  }
+}
 

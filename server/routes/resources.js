@@ -20,4 +20,5 @@ resourceRouter.get('/:resourceId', (req, res) => {
 });
 
 
+
 export default resourceRouter;
