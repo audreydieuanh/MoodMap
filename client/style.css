@@ -1,0 +1,84 @@
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between headerLeft and headerRight */
+  align-items: center; /* Vertically align items */
+  padding: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  max-height: 50px; /* Adjust the logo size as needed */
+  margin-right: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F9FAFB; /* Light gray background */
+  margin: 0;
+  padding: 20px;
+}
+
+#main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  background-color: #E3F2FD; /* Light blue */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure the image does not overflow */
+  width: 300px; /* Fixed width for the cards */
+  transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.top-container {
+  height: 150px; /* Fixed height for the image container */
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-container {
+  padding: 15px;
+  background-color: #FCE4EC; /* Light pink */
+}
+
+h3 {
+  margin: 0;
+  color: #D81B60; /* Pink color for the title */
+}
+
+p {
+  color: #424242; /* Dark gray for the description */
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #673AB7; /* Lavender color for the link */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.error-message {
+  color: #D32F2F; /* Red for error messages */
+  text-align: center;
+  margin-top: 20px;
+}
