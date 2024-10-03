@@ -1,9 +1,11 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import cors from 'cors';
 import resourceRouter from './routes/resources.js';
 import resourcesData from './data/resources.js'; 
 
 const app = express();
+dotenv.config();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());

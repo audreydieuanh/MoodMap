@@ -1,13 +1,33 @@
-# *MoodMap*
+# WEB103 Project 2 - *MoodMap*
+
+Submitted by: **Dieu Anh Trinh**
 
 About this web app: **MoodMap offers users an intuitive platform to explore various mental health tools, articles, and support services tailored to individual needs.**
 
+Time spent: **3** hours
+
+## Required Features
+
+The following **required** functionality is completed:
+
+<!-- Make sure to check off completed functionality below -->
+- [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+- [x] **The PostgreSQL database includes a table that matches the data displayed in the web app**
+  - [x] **NOTE: Your GIF or a screenshot added to the README must include a view of your Railway database that shows the contents of the table used by your app**
+
+
 ## Video Walkthrough
+
+Here's a walkthrough of implemented required features:
 
 <img src='projectWalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LICECap
 
+## Notes
+
+Describe any challenges encountered while building the app or any additional context you'd like to add.
 
 ## License
 

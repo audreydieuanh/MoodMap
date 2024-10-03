@@ -1,17 +1,19 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import resourcesData from '../data/resources.js';
+import ResourcesController from '../controllers/resources.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const resourceRouter = express.Router();
 
-resourceRouter.get('/', (req, res) => {
-    console.log('Received request for resources');
-    res.status(200).json(resourcesData);
-});
+// resourceRouter.get('/', (req, res) => {
+//     console.log('Received request for resources');
+//     res.status(200).json(resourcesData);
+// });
+
+resourceRouter.get('/', ResourcesController.getResources);
 
 resourceRouter.get('/:resourceId', (req, res) => {
     const resourceId = req.params.resourceId;
